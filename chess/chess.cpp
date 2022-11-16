@@ -5170,12 +5170,12 @@ namespace chess
         return this->_iter.size();
     }
 
-    auto PseudoLegalMoveGenerator::begin() const
+    std::vector<Move>::const_iterator PseudoLegalMoveGenerator::begin() const
     {
         return std::begin(this->_iter);
     }
 
-    auto PseudoLegalMoveGenerator::end() const
+    std::vector<Move>::const_iterator PseudoLegalMoveGenerator::end() const
     {
         return std::end(this->_iter);
     }
@@ -5232,12 +5232,12 @@ namespace chess
         return this->_iter.size();
     }
 
-    auto LegalMoveGenerator::begin() const
+    std::vector<Move>::const_iterator LegalMoveGenerator::begin() const
     {
         return std::begin(this->_iter);
     }
 
-    auto LegalMoveGenerator::end() const
+    std::vector<Move>::const_iterator LegalMoveGenerator::end() const
     {
         return std::end(this->_iter);
     }
